@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function fullname( fname,lname) {
+
+            var a = fname + " " + lname + "<br>" ;
+
+            return a;
+
+        };
+
+        var fn = fullname("jay" , "kulkarni");
+        document.write(fn);
+
+
+// --x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x-
+        function sum ( a,b,c) {
+
+        var total = a + b + c + "<br>";
+
+        return total;
+
+        };
+
+            var subTotal = sum(25,25,25);
+            document.write(subTotal);
+
+// --x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x--x-
+
+// percentage as per marks 
+
+document.write (" Total subject - 5 " + "<br>" + " Total Marks - 500 " + "<br>");
+
+function subject (marathi,hindi,english,physics,maths) {
+   var sumofPapers = marathi + hindi + english + physics + maths ;
+        return sumofPapers;
+
+};
+
+var additionofNumbers = subject (20,20,20,20,20);
+
+function percentage() {
+    var per = additionofNumbers / 500 * 100;
+    document.write('Total percentage is ' + per + '% ');
+    // return per ;
+};
+
+percentage();
+
+
+// var totalpercentage = percentage (additionofNumbers);
+
+// document.write('Total percentage is ' + totalpercentage + '% ');
+
+
+    </script>
+</body>
+</html>

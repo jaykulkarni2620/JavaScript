@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form class="search-wrapper cf">
+        <input type="text" placeholder="Enter your email..." required style="box-shadow: none">
+        <!-- <button type="submit">Get Started</button> -->
+        <button type="submit">Get stop</button>
+    </form>
+    <script>
+        let namasteBtn = document.querySelector('button');
+
+    namasteBtn.addEventListener('click', inputMsg());
+
+    function inputMsg () {
+    let name = prompt('Enter Name of student');
+    namasteBtn.textContent = 'Roll no. 1:' + name; 
+}
+    </script>
+</body>
+</html>
