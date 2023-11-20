@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]
+
+    function whosPaying(names) {
+    
+    let size = names.length(); 
+    var randomnames = names.floor(names.random() * size );
+    var randomPerson = names[randomnames];
+    
+    return randomPerson + " is paying bill tomorrow" ;
+    console.log("here is the name "  + randomPerson);
+}
+
+
+    </script>
+</body>
+</html>
