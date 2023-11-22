@@ -8,14 +8,25 @@
 <body>
     <script>
 
+        function cleaning () {
+            alert("cleaning in progress");
+
+        };
+
         function HouseKeeper (name, age, yearsofexpereince ) {
             this.name = name;
             this.age = age;
-            this.yearsofexpereince = yearsofexpereince;
+            this.yearsofexpereince = yearsofexpereince ;
+            this.cleaning = function cleaning () {
+            alert("cleaning in progress");
+            
+        };
         };
 
         var houseKepper = new HouseKeeper ("keval", 23, 2);
+        houseKepper.cleaning();
         console.log(houseKepper);
+       
 
 //suppose we want a new houskeeper so simply we can make it by using constructor function ... so i simply created a function as pass parameter 
 // this is the main "new HouseKeeper" 
